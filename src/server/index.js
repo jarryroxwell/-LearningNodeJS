@@ -1,1 +1,1 @@
-console.log("Hello World!!! I'm cog with nodejs.");
+require('./array');
