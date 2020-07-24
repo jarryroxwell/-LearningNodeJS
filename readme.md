@@ -1,3 +1,18 @@
+<!--lint disable no-literal-urls-->
+<p align="center">
+  <pre>
+   ▄▄▄██▀▀ ██▀███    
+     ▒██  ▓██ ▒ ██▒  
+     ░██  ▓██ ░▄█ ▒  
+  ▓██▄██▓ ▒██▀▀█▄    
+   ▓███▒  ░██▓ ▒██▒  
+   ▒▓▒▒░  ░ ▒▓ ░▒▓░  
+   ▒ ░▒░    ░▒ ░ ▒░  
+   ░ ░ ░     ░   ░   
+   ░   ░     ░   
+  </pre>
+</p>
+
 # Learning Node JS
 
 * inner constant
