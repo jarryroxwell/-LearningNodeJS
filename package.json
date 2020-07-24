@@ -1,0 +1,17 @@
+{
+  "name": "learning_node_js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server/index.js",
+  "private": true,
+  "author": "Jarry Roxwell <jarry.roxwell@gmail.com>",
+  "repository": "github:jarryroxwell/LearningNodeJS",
+  "license": "ISC",
+  "scripts": {
+    "start": "set NODE_ENV=development&& nodemon ./src/server/index.js --watch ./src/server"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {}
+}

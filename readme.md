@@ -16,11 +16,11 @@
 # Learning Node JS
 
 * inner constant
- * __dirname
- * __filename
+  * __dirname
+  * __filename
 
 * inner module
- * events
- * util
- * fs
- * http
+  * events
+  * util
+  * fs
+  * http
