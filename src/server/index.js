@@ -1,15 +1,38 @@
-var a = require('./array');
+var events = require('events');
+var util = require('util');
 
-var x = a.arr([1,5,8,0,9,114]);
-var y = a.str(100, 54);
-var z = a.x;
-var zero = a.zero();
-var slark = a.slark(12);
-var axe = a.axe();
+var myEmit = new events.EventEmitter();
 
-console.log(x);
-console.log(y);
-console.log(z);
-console.log(zero);
-console.log(slark);
-console.log(axe);
+
+/* 
+    myEmit.on('click', (a)=>{
+        ...
+    });
+*/
+myEmit.on('some_event', (a)=>{
+    console.log(a);
+});
+
+myEmit.emit('some_event', "hello world. this is my event.");
+
+
+
+var Cars = function(model){
+    this.model = model;
+};
+
+util.inherits(Cars, events.EventEmitter);
+
+var bmw = new Cars('x6');
+var audi = new Cars('a7');
+var lada = new Cars('kalina');
+
+var cars = [bmw, audi, lada];
+cars.forEach((car)=>{
+    car.on('some_event', (a)=>{
+        console.log(car.model, a);
+    });
+});
+
+bmw.emit('some_event',"no bmw hahah");
+lada.emit('some_event',"ohoho");
