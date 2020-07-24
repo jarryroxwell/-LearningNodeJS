@@ -8,3 +8,4 @@
  * events
  * util
  * fs
+ * http
