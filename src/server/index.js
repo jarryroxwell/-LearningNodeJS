@@ -1,38 +1,17 @@
-var events = require('events');
-var util = require('util');
+var fs = require("fs");
 
-var myEmit = new events.EventEmitter();
+var fread = fs.readFileSync(__dirname+"/text.txt", "utf8");
+console.log(fread);
 
+var mes = "hello world";
+var fwrite = fs.writeFileSync("hello_my_world.txt", mes);
 
-/* 
-    myEmit.on('click', (a)=>{
-        ...
-    });
-*/
-myEmit.on('some_event', (a)=>{
-    console.log(a);
+fs.readFile(__dirname+"/text.txt", "utf8", (err, data)=>{
+    console.log(data);
 });
 
-myEmit.emit('some_event', "hello world. this is my event.");
-
-
-
-var Cars = function(model){
-    this.model = model;
-};
-
-util.inherits(Cars, events.EventEmitter);
-
-var bmw = new Cars('x6');
-var audi = new Cars('a7');
-var lada = new Cars('kalina');
-
-var cars = [bmw, audi, lada];
-cars.forEach((car)=>{
-    car.on('some_event', (a)=>{
-        console.log(car.model, a);
-    });
+fs.writeFile("hello_my_world-2.txt", mes, (err, data)=>{
+    console.log('check');
 });
 
-bmw.emit('some_event',"no bmw hahah");
-lada.emit('some_event',"ohoho");
+console.log("test");

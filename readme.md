@@ -7,3 +7,4 @@
 * inner module
  * events
  * util
+ * fs
