@@ -4,4 +4,4 @@ var arr = function(a){
 
 var x = arr([1,2,6,7,0,34,9]);
 
-console.log(x);
+module.exports = arr;
