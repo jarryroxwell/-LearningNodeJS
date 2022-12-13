@@ -11,7 +11,7 @@
     "start": "set NODE_ENV=development&& nodemon ./src/server/index.js --watch ./src/server"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   },
   "devDependencies": {}
 }
